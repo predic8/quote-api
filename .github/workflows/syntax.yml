@@ -1,10 +1,10 @@
-name: Syntax
+name: OAS
 
 on:
   - pull_request
 
 jobs:
-  Checks:
+  Syntax:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

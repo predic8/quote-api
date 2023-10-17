@@ -4,3 +4,5 @@ extends:
 rules:
   "info-contact": "off"
   "info-description": "off"
+  "operation-description": "off"
+  "operation-tags": "off"
