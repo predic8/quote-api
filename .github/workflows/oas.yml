@@ -1,4 +1,4 @@
-name: OpenAPI Syntax
+name: Syntax
 
 on:
   - pull_request
