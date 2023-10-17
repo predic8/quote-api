@@ -18,6 +18,8 @@ paths:
                   type: integer
                 product:
                   type: string
+                shipment:
+                  type: char
       responses:
         '200':
           description: OK
