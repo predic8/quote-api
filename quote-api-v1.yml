@@ -1,0 +1,23 @@
+openapi: '3.0.2'
+info:
+  title: Quote API
+  version: '1.0'
+servers:
+  - url: https://api.predic8.de/v1
+paths:
+  /quotes:
+    post:
+      operationId: createQuote
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: integer
+                product:
+                  type: string
+      responses:
+        '200':
+          description: OK
