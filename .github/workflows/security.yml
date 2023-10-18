@@ -1,14 +1,14 @@
-name: OAS
+name: Security
 
 on:
   - pull_request
 
 jobs:
-  Security:
+  Check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
       - run: npm install -g @stoplight/spectral-cli
       - run: npm install --save -D @stoplight/spectral-owasp-ruleset
-      - run: spectral lint -r .security-spectral.yml quote-api-v1.yml
+      - run: spectral lint -r .security-spectral.yml quote-api-v1.yml -D err
