@@ -15,9 +15,9 @@ paths:
               type: object
               properties:
                 id:
-                  type: integer
-                product:
                   type: string
+                  format: uuid
+                  maxLength: 36
       responses:
         '200':
           description: OK
