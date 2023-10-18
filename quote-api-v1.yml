@@ -19,7 +19,7 @@ paths:
                 product:
                   type: string
                 shipment:
-                  type: char
+                  type: string
       responses:
         '200':
           description: OK
