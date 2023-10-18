@@ -1,0 +1,7 @@
+extends: 
+  - "@stoplight/spectral-owasp-ruleset"
+
+rules:
+  "owasp:api4:2019-rate-limit": "off"
+  "owasp:api4:2019-rate-limit-responses-429": "off"
+  "owasp:api2:2019-protection-global-unsafe": "off"

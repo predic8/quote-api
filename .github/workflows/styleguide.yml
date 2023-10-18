@@ -1,4 +1,4 @@
-name: Syntax
+name: Styleguide
 
 on:
   - pull_request
@@ -10,4 +10,4 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
       - run: npm install -g @stoplight/spectral-cli
-      - run: spectral -r .syntax-spectral.yml lint quote-api-v1.yml
+      - run: spectral -r .styleguide-spectral.yml lint quote-api-v1.yml

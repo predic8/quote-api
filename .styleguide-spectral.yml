@@ -1,0 +1,8 @@
+rules:
+  "path-characters":
+    description: "Paths may only contain lowercase letters, / - { or }"
+    given: "$.paths[*]~"
+    then:
+      function: pattern
+      functionOptions:
+        match: "^[a-z\/\\{\\}-]+$"

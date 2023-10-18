@@ -16,8 +16,18 @@ paths:
               properties:
                 id:
                   type: integer
+                  format: int32
+                  minimum: 0
+                  maximum: 10000
                 product:
                   type: string
+                  maxLength: 100
+                  pattern: ".*"
+                shipment:
+                  type: string
+                  enum:
+                    - DOT
+                    - FOB
       responses:
         '200':
           description: OK
