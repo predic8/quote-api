@@ -13,8 +13,6 @@ paths:
           application/json:
             schema:
               type: object
-              required:
-                - product
               properties:
                 id:
                   type: string
